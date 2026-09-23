@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nola Template Manager</title>
+  <link rel="stylesheet" href="/approval-nola-team/assets/styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="card hero">
+      <h1>Nola Template Manager</h1>
+      <p>Manage allowed origins and HTML templates. Every successful template upload is saved and the in-memory encrypted cache is refreshed immediately.</p>
+    </section>
+
+    <section class="card">
+      <h2>CORS Approval Manager</h2>
+      <div class="row">
+        <input id="originInput" type="text" placeholder="https://example.com">
+        <button id="addOriginBtn" class="primary">Add Origin</button>
+      </div>
+      <div id="originStatus" class="status">Loading...</div>
+      <div id="origins"></div>
+    </section>
+
+    <section class="card">
+      <h2>HTML Template Manager</h2>
+      <p class="muted small">Description is required. Select a WIN or MAC HTML file and upload it. The file is saved and re-encrypted immediately.</p>
+      <div id="templateStatus" class="status">Loading templates...</div>
+      <div id="templates" class="template-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Data API</h2>
+      <pre>GET /data?platform=win
+GET /data?platform=mac</pre>
+      <p class="muted small">Response format: { "cipher": "..." }</p>
+    </section>
+  </main>
+  <script src="/approval-nola-team/assets/app.js" defer></script>
+</body>
+</html>

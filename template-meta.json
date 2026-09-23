@@ -1,0 +1,12 @@
+{
+  "win": {
+    "description": "Default Windows template",
+    "filename": "win-template.html",
+    "updatedAt": null
+  },
+  "mac": {
+    "description": "Default Mac template",
+    "filename": "mac-template.html",
+    "updatedAt": null
+  }
+}

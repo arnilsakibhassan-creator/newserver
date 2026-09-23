@@ -1,0 +1,15 @@
+{
+  "name": "nola-template-manager-v2",
+  "version": "2.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}
