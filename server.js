@@ -50,7 +50,7 @@ function templatePath(platform) {
 ensureDir(TEMPLATES_DIR);
 
 let allowedOrigins = readJson(CORS_FILE, { origins: [] }).origins;
-if (!Array.isArray(allowedOrigins)) allowedOrigins = [];
+if (!Array.isArray(allowedOrigins)) allowedOrigins = [*];
 
 let templateMeta = readJson(META_FILE, {
   win: { description: '', filename: 'win-template.html', updatedAt: null },
